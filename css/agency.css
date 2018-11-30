@@ -80,6 +80,11 @@ section h3.section-subheading {
     padding: 150px 0;
   }
 }
+@media (max-width: 576px) {
+  body{
+    background-image: url("../img/backgorund/bg2.png");
+  }
+}
 
 .btn {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -767,6 +772,7 @@ section.background-solido{
   background: linear-gradient(166.77deg, #003D6C -68.29%, #CB9B77 102.88%);
   color: white;
   margin: 0px;
+  padding-bottom: 53px;
 }
 
 #rins{
@@ -789,3 +795,8 @@ background-size: cover;
 ul {
  list-style-type: none;
  }
+
+div.contatoDiv{
+   padding-left: 0px;
+   padding-right: 0px;
+}
