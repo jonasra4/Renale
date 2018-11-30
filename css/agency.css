@@ -33,11 +33,11 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: white;
 }
 
 a:hover {
-  color: #fec503;
+  color: white;
 }
 
 .text-primary {
@@ -54,9 +54,9 @@ h6 {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-section {
+/* section {
   padding: 100px 0;
-}
+} */
 
 section h2.section-heading {
   font-size: 36px;
@@ -81,9 +81,9 @@ section h3.section-subheading {
   }
 }
 @media (max-width: 576px) {
-  body{
+  /* body{
     background-image: url("../img/backgorund/bg2.png");
-  }
+  } */
 }
 
 .btn {
@@ -97,10 +97,10 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  /* background-color: #fed136; */
-  border-style: none;
-  background: linear-gradient(144.27deg, #005088 -25.87%, #81807D 108.77%, #CB9B77 139.33%);
-  border-radius: 10px;
+  margin-top: 20px;
+  background: #005088;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -119,10 +119,6 @@ section h3.section-subheading {
   text-shadow: none;
 }
 
-::selection {
-  background: #fed136;
-  text-shadow: none;
-}
 
 img::-moz-selection {
   background: transparent;
@@ -146,8 +142,8 @@ img::-moz-selection {
   padding: 13px;
   text-transform: uppercase;
   color: white;
-  border: 0;
-  background-color: #fed136;
+  border-color: white;
+  background-color: none;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -687,6 +683,7 @@ footer {
   padding: 25px 0;
   background-color: #003F6C;
   color:white;
+  font-size: 15px;
 }
 
 footer span.copyright {
@@ -760,6 +757,8 @@ div.texto-introducao{
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+padding: 100px 0;
+
 /*padding: 800px 0px 0px 0px;*/
 }
 
@@ -769,10 +768,20 @@ section.background-solido{
 
 .jumbotron{
   border-radius: 0px;
-  background: linear-gradient(166.77deg, #003D6C -68.29%, #CB9B77 102.88%);
+  /* background: linear-gradient(166.77deg, #003D6C -68.29%, #CB9B77 102.88%); */
+  background-color: #DEDBDB;
   color: white;
   margin: 0px;
   padding-bottom: 53px;
+  background: #DEDBDB;
+  border-bottom-left-radius : 5px 5px 5px 0px;
+  border-bottom-right-radius: 5px 5px 5px 0px;
+
+
+}
+
+.jumbotron-azul{
+  background-color: #003F6C;
 }
 
 #rins{
@@ -794,9 +803,69 @@ background-size: cover;
 
 ul {
  list-style-type: none;
+ padding-left: 0px;
  }
 
 div.contatoDiv{
    padding-left: 0px;
    padding-right: 0px;
+}
+
+div.footMargin{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2{
+font-family: Cabin;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 44px;
+text-align: center;
+
+color: white;
+
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+section.contato{
+  padding: 0;
+}
+
+h3.fale-conosco{
+  font-family: 'Cabin';
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 33px;
+
+color: #FFFFFF;
+
+}
+
+
+.form-control{
+  background-color: transparent;
+  border-bottom-color: rgba(0, 63, 108, 0.5);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+
+  border-radius: 0px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: transparent;
+    border:transparent;
+    outline: 0;
+    box-shadow: none;
+
+}
+
+/*MARCADOR AMARELO*/
+::selection {
+  background: #fed136;
+  text-shadow: none;
 }
