@@ -876,3 +876,33 @@ section#contato{
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+/*QUEM SOMOS*/
+body#quemSomos{
+  background: #EDEDED;
+  height: 497px;
+
+/* background-color: linear-gradient(180deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%); */
+
+
+}
+section#gradiente{
+  background: linear-gradient(180deg, #003F6C 0%, rgba(196, 196, 196, 0) 25%);
+
+}
+section#equipe{
+  background: linear-gradient(360deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%);
+  background-position:absolute;
+}
+div#rins-horizontal{
+  /* background: linear-gradient(180deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%); */
+
+/* background-color: gray; */
+/* background-color: linear-gradient(180deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%); */
+
+background-image: url("../img/backgorund/rinsHorizontal.png");
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
