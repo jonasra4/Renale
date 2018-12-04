@@ -786,6 +786,7 @@ section.background-solido{
 
 #rins{
   background-color: #EDEDED;
+  padding: 0px;
   background-image: url("../img/backgorund/bg2.png");
   -webkit-background-size: cover;
 -moz-background-size: cover;
