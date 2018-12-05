@@ -122,7 +122,7 @@
                                     $name!="Timeline Photos"
                                 ){
                              
-                                    $show_pictures_link = "photos.php?album_id={$id}&album_name={$name}";
+                                    $show_pictures_link = "album.php?album_id={$id}&album_name={$name}";
                                     
                                     //Parte modificada
                                     $json_link_2 = "https://graph.facebook.com/v2.3/{$id}/photos?fields=source,images,name&access_token={$access_token}";
