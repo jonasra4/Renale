@@ -928,3 +928,37 @@ h3.h3quem{
 
 
 }
+.topicos{
+  font-family: Cabin;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 36px;
+
+color: #4E4D4D;
+margin-bottom: 30px;
+}
+.sub-topicos{
+  font-family: Cabin;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 30px;
+
+color: #000000;
+
+}
+
+body#tratamento{
+  background-image: url("../img/backgorund/tratamento.jpg");
+
+}
+
+.tratamento-gray{
+  background-color: #EDEDED;
+  padding: 50px 0px;
+}
+
+.icones-tratamentos{
+  margin: 30px 0px;
+}
