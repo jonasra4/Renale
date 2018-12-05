@@ -127,7 +127,8 @@
 
 
     <section class="rins">
-      <div class="container-fluid" >
+      <!-- Fake News cards -->
+      <!--<div class="container-fluid" >
 
         <div class="row">
           <div class="col-lg-6"></div>
@@ -174,11 +175,98 @@
                 </div>
               </div>
             </div>
-          </div> <!-- cards de noticiass -->
+          </div>
           <div class="col-lg-2"></div>
         </div>
 
-      </div>
+      </div>-->
+      <!-- Constroi o feed (Jason Link) - Mostra a Cover-pic do album -->
+        <div class="container">
+            
+            <?php
+                echo "<div class='container-fluid' id='about'>";
+                    echo "<div class='row'>";
+                        /*echo "<div class='col-lg-2'>";
+                        echo "</div>";*/
+                        echo "<div class='col-lg-1'>";
+                            echo "<h5>{$page_title}</h5>";
+                            echo "</div>";
+                    echo "</div>";
+                    echo "<div class='row align-items-center'>";
+                /*echo "<div class='col-lg-12'>";
+                    echo "<h1 class='page-header'>{$page_title}</h1>";
+                echo "</div>";*/
+                 
+                $access_token="EAAfdsSLw7TQBABQerXaLZAkU6u430ZAmsFtjvvyZBZAaK7ZAPErTymeZCIyEhHXZAypxuEZCiMvFS8D9uZCxaNfBcr32XfMpmJrzRZBo8NaZCCSSdWtbOQJ28xZAFNRHACJkx7xmkR4nz54dcz7rEWPk9b1ysI1pOZCacpq64CIAliZAJxzAZDZD";
+                 
+                $fields="id,name,description,link,cover_photo,count";
+                $fb_page_id = "291918208110431";
+                 
+                $json_link = "https://graph.facebook.com/v2.8/{$fb_page_id}/albums?fields={$fields}&access_token={$access_token}";
+               
+                $json = file_get_contents($json_link);
+                 
+                $obj = json_decode($json, true, 512, JSON_BIGINT_AS_STRING);
+                 
+                $album_count = count($obj['data']);
+                
+                        echo "<div class='col-lg-12'>";
+                            echo "<div class='row'>";
+
+                for($x=0; $x<$album_count; $x++){
+                    
+                    $id = isset($obj['data'][$x]['id']) ? $obj['data'][$x]['id'] : "";
+                    $name = isset($obj['data'][$x]['name']) ? $obj['data'][$x]['name'] : "";
+                    $url_name=urlencode($name);
+                    $description = isset($obj['data'][$x]['description']) ? $obj['data'][$x]['description'] : "";
+                    $link = isset($obj['data'][$x]['link']) ? $obj['data'][$x]['link'] : "";
+                 
+                    $cover_photo = isset($obj['data'][$x]['cover_photo']['id']) ? $obj['data'][$x]['cover_photo']['id'] : "";
+                    $cover_photo_name = isset($obj['data'][$x]['cover_photo']['name']) ? $obj['data'][$x]['cover_photo']['name'] : "";
+                    
+                    // use this for older access tokens:
+                    // $cover_photo = isset($obj['data'][$x]['cover_photo']) ? $obj['data'][$x]['cover_photo'] : "";
+                     
+                    $count = isset($obj['data'][$x]['count']) ? $obj['data'][$x]['count'] : "";
+                 
+                    // if you want to exclude an album, just add the name on the if statement
+                    if(
+                        $name!="Profile Pictures" &&
+                        $name!="Cover Photos" &&
+                        $name!="Timeline Photos"
+                    ){
+                 
+                        $show_pictures_link = "album.php?album_id={$id}&album_name={$name}";
+                    
+                                echo "<div class='col-md-4 col-lg-4 col-sm-4 col-12'>";
+                                    echo "<div class='card'>";
+                                        echo "<a href='{$show_pictures_link}'>";
+                                        echo "<img class='card-img-top' src='https://graph.facebook.com/v2.3/{$cover_photo}/picture?access_token={$access_token}' alt=''>";
+                                        echo "</a>";
+                                        echo "<div class='card-body'>";
+                                            echo "<h3>";
+                                                echo "<a class='card-title' style='color:#363636' href='{$show_pictures_link}'>{$name}</a>";
+                                            echo "</h3>";
+                                            
+                                            $count_text="Notícias";
+                                            if($count>1){ $count_text="Notícias"; }
+                                            
+                                            echo "<p class='card-text'>";
+                                                echo "<div style='color:#888;'>{$count} {$count_text} / <a style='color:#3C357C' href='{$link}' target='_blank'>Veja no Facebook</a></div>";
+                                                //echo $description;
+                                                echo $cover_photo_name;
+                                            echo "</p>";                                        
+                                        echo "</div>";
+                                    echo "</div>";
+                                echo "</div>";
+                    }
+                }
+                            echo "</div>";
+                        echo "</div>";
+                    echo "</div>";
+                echo "</div>";
+            ?>
+        </div>
 </section>
 
 
