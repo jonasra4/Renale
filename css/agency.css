@@ -85,12 +85,9 @@ section h3.section-subheading {
   /* body{
     background-image: url("../img/backgorund/bg2.png");
   } */
-
-
-
-
-
-
+  section {
+    padding: 180px 0;
+  }
 
   .bolinha{
     margin-top: 300px;
@@ -923,4 +920,11 @@ background-size: cover;
 .dedicamos{
   margin-top: 244px;
   margin-bottom: 118px;
+}
+
+h3.h3quem{
+  font-size: 24px;
+  font-family: 'Cabin', sans-serif;
+
+
 }
