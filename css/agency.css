@@ -80,10 +80,25 @@ section h3.section-subheading {
     padding: 150px 0;
   }
 }
+
 @media (max-width: 576px) {
   /* body{
     background-image: url("../img/backgorund/bg2.png");
   } */
+
+
+  .dedicamos{
+    margin-top: 244px;
+    margin-bottom: 0px;
+  }
+
+
+
+
+
+  .bolinha{
+    margin-top: 300px;
+  }
 }
 
 .btn {
@@ -757,7 +772,7 @@ div.texto-introducao{
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-padding: 100px 0;
+padding: 100px 0px 0px 0px;
 
 /*padding: 800px 0px 0px 0px;*/
 }
@@ -784,14 +799,15 @@ section.background-solido{
   background-color: #003F6C;
 }
 
-#rins{
+section.rins{
   background-color: #EDEDED;
   background-image: url("../img/backgorund/bg2.png");
 -webkit-background-size: cover;
 -moz-background-size: cover;
-background-size: cover; 
+background-size: cover;
 -o-background-size: cover;
 }
+
 #rins2{
   background-color: #EDEDED;
   background-image: url("../img/backgorund/bg2.png");
@@ -905,4 +921,10 @@ background-image: url("../img/backgorund/rinsHorizontal.png");
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+}
+
+
+.dedicamos{
+  margin-top: 244px;
+  margin-bottom: 118px;
 }
