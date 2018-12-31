@@ -1,0 +1,257 @@
+ body#inicio{
+   background-image: url("../img/background/bg1.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Cabin', sans-serif;
+}
+
+body#tratamentos{
+  background-image: url("../img/background/bg-tratamentos.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Cabin', sans-serif;
+}
+
+/*configuracao navbar*/
+.efeito-navbar-off{
+  background-color: transparent;
+  padding: 20px 16px;
+}
+
+.efeito-navbar-in{
+  padding: 8px 16px;
+  background-color: #005088;
+}
+
+a{
+  color: white;
+}
+
+.navbar-toggler{
+  border:1px solid white;
+}
+
+i.fas{
+  color: white;
+}
+
+/*configuracao das sections*/
+#tela-inicio{
+   height: 50vh;
+}
+
+
+#intro{
+  height:120svh;
+  background-image: url("../img/background/forma.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.margem-intro{
+  padding-top: 400px;
+  padding-bottom: 50px;
+}
+
+#rins-intro{
+  height:200vh;
+  background-color: #EDEDED;
+  background-image: url("../img/background/bg34.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+#noticias{
+  /* height:90vh; */
+  padding: 20px 0px;
+  background: linear-gradient(360deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%);
+  background-color: #EDEDED;
+}
+
+#tela-tratamentos{
+  height: 80vh;
+}
+#intro-tratamentos{
+  padding: 50px 0px;
+}
+#tratamentos-section{
+  padding: 50px 0px;
+}
+
+
+body#quemSomos{
+  height:200vh;
+  background-color: #EDEDED;
+
+  background-image: url("../img/background/back-quemSomos.png");
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  background-size:contain;
+  /* background-attachment: fixed; */
+  font-family: 'Cabin', sans-serif;
+}
+#equipe{
+  background: linear-gradient(360deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%);
+  background-color: #EDEDED;
+  padding-bottom: 80px;
+}
+
+#rins-quemSomos{
+  /* height:50vh; */
+}
+
+
+/*contato*/
+.jumbotron{
+  border-radius: 0px;
+  /* background: linear-gradient(166.77deg, #003D6C -68.29%, #CB9B77 102.88%); */
+  background-color: #DEDBDB;
+  color: white;
+  margin: 0px;
+  padding-bottom: 53px;
+  background: #DEDBDB;
+  border-bottom-left-radius : 5px 5px 5px 0px;
+  border-bottom-right-radius: 5px 5px 5px 0px;
+}
+
+.jumbotron-azul{
+  background-color: #003F6C;
+}
+
+.col-contato{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.form-control{
+  background-color: transparent;
+  border-bottom-color: rgba(0, 63, 108, 0.5);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-radius: 0px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: transparent;
+    border:transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    background: #005088;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+/*configuracoes de texto*/
+h2{
+  font-family: 'Cabin', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 44px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+/*rodape*/
+
+footer {
+  padding: 25px 0;
+  background-color: #003F6C;
+  color:white;
+  font-size: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#rins-missao {
+  height:100vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #rins-intro{
+    height:100vh;
+    background-color: #EDEDED;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #rins-missao{
+    height:4vh;
+  }
+
+
+  body#quemSomos{
+    height:300vh;
+    background-color: #EDEDED;
+
+    background-image: url("../img/background/mobile2.png");
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size:auto;
+    /* background-attachment: fixed; */
+    font-family: 'Cabin', sans-serif;
+  }
+
+  .efeito-navbar-off{
+    background-color:  #003F6C;
+    padding: 20px 16px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+
+  body#quemSomos{
+    height:300vh;
+    background-color: #EDEDED;
+
+    background-image: none;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size:auto;
+    /* background-attachment: fixed; */
+    font-family: 'Cabin', sans-serif;
+  }
+
+  .efeito-navbar-off{
+    background-color:  #003F6C;
+    padding: 20px 16px;
+  }
+}
+
+
+
+/*GERAIS*/
+
+.back-padrao{
+  background-color: #DEDBDB;
+}
+
+.espacamento-tratamentos{
+  padding: 20px 0px;
+}
+.espacamento-icones{
+  margin: 20px 0px;
+}
