@@ -217,6 +217,13 @@ ul {
     background-color:  #003F6C;
     padding: 20px 16px;
   }
+
+  #noticias{
+    /* height:90vh; */
+    padding: 40px 0px;
+    background: linear-gradient(360deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%);
+    background-color: #EDEDED;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
