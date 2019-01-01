@@ -46,9 +46,9 @@ i.fas{
 
 
 #intro{
-  height:120svh;
-  /* background-color: #EDEDED ; */
-  background-image: url("../img/background/forma5.png");
+  /* height:120vh; */
+  /* background: #EDEDED ; */
+  background-image: url("../img/background/.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -60,13 +60,18 @@ i.fas{
 }
 
 #rins-intro{
-
   height:200vh;
   background-color: #EDEDED;
   background-image: url("../img/background/bg34.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
+}
+
+#teste{
+  background: #EDEDED ;
+  height:50vh;
 
 }
 
@@ -114,11 +119,11 @@ body#quemSomos{
 .jumbotron{
   border-radius: 0px;
   /* background: linear-gradient(166.77deg, #003D6C -68.29%, #CB9B77 102.88%); */
-  background-color: #DEDBDB;
+  background-color: #EDEDED;
   color: white;
   margin: 0px;
   padding-bottom: 53px;
-  background: #DEDBDB;
+  background: #EDEDED;
   border-bottom-left-radius : 5px 5px 5px 0px;
   border-bottom-right-radius: 5px 5px 5px 0px;
 }
@@ -255,7 +260,7 @@ ul {
 /*GERAIS*/
 
 .back-padrao{
-  background-color: #DEDBDB;
+  background-color: #EDEDED;
 }
 
 .espacamento-tratamentos{
@@ -263,4 +268,14 @@ ul {
 }
 .espacamento-icones{
   margin: 20px 0px;
+}
+
+
+#bg-teste{
+  background-image: url("../img/background/p.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+  /* background-attachment: fixed; */
+  height: 100vh;
 }
