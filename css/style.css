@@ -47,7 +47,8 @@ i.fas{
 
 #intro{
   height:120svh;
-  background-image: url("../img/background/forma.png");
+  /* background-color: #EDEDED ; */
+  background-image: url("../img/background/forma5.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -59,7 +60,7 @@ i.fas{
 }
 
 #rins-intro{
-  
+
   height:200vh;
   background-color: #EDEDED;
   background-image: url("../img/background/bg34.png");
