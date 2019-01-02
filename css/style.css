@@ -45,21 +45,7 @@ i.fas{
 }
 
 
-#intro{
-  /* height:120vh; */
-  /* background: #EDEDED ; */
-  background-image: url("../img/background/.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
 
-
-#teste{
-  background: #EDEDED ;
-  height:50vh;
-
-}
 
 #noticias{
   padding: 20px 0px;
@@ -94,11 +80,6 @@ body#quemSomos{
   background-color: #EDEDED;
   padding-bottom: 80px;
 }
-
-#rins-quemSomos{
-  /* height:50vh; */
-}
-
 
 /*contato*/
 .jumbotron{
@@ -173,44 +154,47 @@ ul {
   padding-left: 0px;
 }
 
-
-
-#intro-index{
+/******************/
+#forma-section{
+  /* background-color: #EDEDED; */
+  height: 100vh;
   background-image: url("../img/background/p.png");
-  /* background-color: red; */
   background-repeat: no-repeat;
   background-position: center center;
   background-size:cover;
-  /* background-attachment: fixed; */
-  height: 90%;
-}
-.space{
-  height: 50vh;
+
 }
 
-.kk{
-  height: 100vh;
-}
-#bg-rins-intro{
+#rins-intro{
   background-color: #EDEDED;
-
+/* height: 250vh; */
+  height: 2087px;
   background-image: url("../img/background/bg34r.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size:cover;
-  height: 250vh;
-
-
 }
 
-.vh100{
-  height: 100vh;
+.space787padding{
+  padding-top: 787px;
 }
 
 
 @media only screen and (max-width: 600px) {
 
+  #forma-section{
+    /* background-color: #EDEDED; */
+    height: 100vh;
+    background-image: url("../img/background/p.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
 
+  }
+
+  .margin-tp-150{
+    padding-top: 200px;
+  }
 
   body#quemSomos{
     height:300vh;
@@ -236,21 +220,26 @@ ul {
     background-color: #EDEDED;
   }
 
-  #bg-rins-intro{
+
+
+
+  #rins-intro{
     background-color: #EDEDED;
 
+    height: 100vh;
     background-image: none;
     background-repeat: no-repeat;
     background-position: center center;
     background-size:cover;
-    height: 130vh;
-
-
   }
 
-  .vh100{
-    height: 10vh;
+  .space787padding{
+    padding-top: 0px;
   }
+
+
+
+
 }
 
 @media only screen and (max-width: 1000px) {
