@@ -208,6 +208,23 @@ ul {
     font-family: 'Cabin', sans-serif;
   }
 
+  body#inicio{
+    background-image: url("../img/background/bg1mobi.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Cabin', sans-serif;
+ }
+
+ body#tratamentos{
+   background-image: url("../img/background/bg-tratamento-mobi.png");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Cabin', sans-serif;
+ }
   .efeito-navbar-off{
     background-color:  #003F6C;
     padding: 20px 16px;
