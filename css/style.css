@@ -177,7 +177,7 @@ ul {
 
 #intro-index{
   background-image: url("../img/background/p.png");
-  background-color: red;
+  /* background-color: red; */
   background-repeat: no-repeat;
   background-position: center center;
   background-size:cover;
