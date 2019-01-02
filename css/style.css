@@ -226,7 +226,7 @@ ul {
   #rins-intro{
     background-color: #EDEDED;
 
-    height: 100vh;
+    height: auto;
     background-image: none;
     background-repeat: no-repeat;
     background-position: center center;
