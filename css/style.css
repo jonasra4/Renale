@@ -209,11 +209,13 @@ height: 250vh;
   }
 
   body#inicio{
-    background-image: url("../img/background/bg1mobi.png");
+    background-color: blue;
+    background-image: url("../img/background/3.png");
+
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-    background-attachment:  scroll;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Cabin', sans-serif;
  }
 
