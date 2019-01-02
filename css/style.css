@@ -211,8 +211,8 @@ height: 250vh;
   body#inicio{
     background-image: url("../img/background/bg1mobi.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    /* background-position: center center; */
+    background-size: auto;
     background-attachment: fixed;
     font-family: 'Cabin', sans-serif;
  }
