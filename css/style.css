@@ -54,20 +54,20 @@ i.fas{
   background-size: cover;
 }
 
-.margem-intro{
+/* .margem-intro{
   padding-top: 400px;
   padding-bottom: 50px;
-}
+} */
 
-#rins-intro{
-  height:200vh;
+/* #rins-intro{
+  height:250vh;
   background-color: #EDEDED;
   background-image: url("../img/background/bg34.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
-}
+} */
 
 #teste{
   background: #EDEDED ;
@@ -76,7 +76,6 @@ i.fas{
 }
 
 #noticias{
-  /* height:90vh; */
   padding: 20px 0px;
   background: linear-gradient(360deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%);
   background-color: #EDEDED;
@@ -188,25 +187,59 @@ ul {
   padding-left: 0px;
 }
 
-#rins-missao {
+/* #rins-missao {
   height:100vh;
+} */
+
+
+
+
+
+
+
+#intro-index{
+  background-image: url("../img/background/p.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+  /* background-attachment: fixed; */
+  height: 100vh;
+}
+.space{
+  height: 50vh;
+}
+
+.kk{
+  height: 100vh;
+}
+#bg-rins-intro{
+  background-color: #EDEDED;
+
+  background-image: url("../img/background/bg34r.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+  height: 250vh;
+
 }
 
 
+
+
 @media only screen and (max-width: 600px) {
-  #rins-intro{
+  /* #rins-intro{
     height:100vh;
     background-color: #EDEDED;
     background-image: none;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-  }
-
+  } */
+/*
   #rins-missao{
     height:30vh;
 
-  }
+  } */
 
 
   body#quemSomos{
@@ -233,8 +266,19 @@ ul {
     background-color: #EDEDED;
   }
 
+  #bg-rins-intro{
+    background-color: #EDEDED;
 
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    height: 80vh;
 
+  }
+  .kk{
+    height: 20vh;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -275,11 +319,15 @@ ul {
 }
 
 
-#bg-teste{
+/* #bg-teste{
   background-image: url("../img/background/p.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size:cover;
   /* background-attachment: fixed; */
-  height: 100vh;
-}
+  /* height: 100vh; */
+/* }  */
+
+
+
+/************************************/
