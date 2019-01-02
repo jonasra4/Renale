@@ -167,8 +167,8 @@ ul {
 
 #rins-intro{
   background-color: #EDEDED;
-/* height: 250vh; */
-  height: 2087px;
+height: 250vh;
+  /* height: 2087px; */
   background-image: url("../img/background/bg34r.png");
   background-repeat: no-repeat;
   background-position: center center;
