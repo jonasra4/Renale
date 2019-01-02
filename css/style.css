@@ -1,5 +1,7 @@
  body#inicio{
-   background-image: url("../img/background/bg1.jpg");
+   /* background-image: url("../img/background/bg1.jpg"); */
+   background-image: url("../img/background/bg1mobi.png");
+   
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
