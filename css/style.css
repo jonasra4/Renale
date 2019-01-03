@@ -4,7 +4,7 @@
 
    background-repeat: no-repeat;
    background-position: center center;
-   /* background-size: cover; */
+   background-size: cover;
    background-attachment: fixed;
    font-family: 'Cabin', sans-serif;
 }
@@ -211,13 +211,16 @@ height: 250vh;
   }
 
   body#inicio{
-    background-color: blue;
-    background-image: url("../img/background/bg1mobi.png");
+    /* background-color: blue; */
+    /* background-image: url("../img/background/bg1mobi.png"); */
+    background: url("../img/background/bg1mobi.png") no-repeat center center fixed;
 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100%;
+   overflow: hidden;
     font-family: 'Cabin', sans-serif;
  }
 
