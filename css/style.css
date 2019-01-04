@@ -235,11 +235,8 @@ height: 250vh;
  }
 
  body#tratamentos{
-   background-image: url("../img/background/bg-tratamento-mobi.png");
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: cover;
-   background-attachment: fixed;
+   background: linear-gradient(360deg, #003F6C 90%, rgba(196, 196, 196, 0.50) 100%);
+
    font-family: 'Cabin', sans-serif;
  }
   .efeito-navbar-off{
