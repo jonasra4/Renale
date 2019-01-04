@@ -315,3 +315,26 @@ height: 250vh;
 
 
 /************************************/
+/*GALERIA*/
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.img-thumbnail {
+    padding: 0;
+    /* background-color: #fff; */
+    /* border: 1px solid #dee2e6; */
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
