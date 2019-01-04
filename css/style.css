@@ -7,6 +7,7 @@
    background-size: cover;
    background-attachment: fixed;
    font-family: 'Cabin', sans-serif;
+   display: none;
 }
 
 body#tratamentos{
@@ -16,6 +17,8 @@ body#tratamentos{
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Cabin', sans-serif;
+  display: none;
+
 }
 
 /*configuracao navbar*/
@@ -76,6 +79,8 @@ body#quemSomos{
   background-size:contain;
   /* background-attachment: fixed; */
   font-family: 'Cabin', sans-serif;
+  display: none;
+
 }
 #equipe{
   background: linear-gradient(360deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%);
@@ -215,6 +220,8 @@ height: 250vh;
     /* background-position: center center; */
     background-size:auto;
     /* background-attachment: fixed; */
+    display: none;
+
     font-family: 'Cabin', sans-serif;
   }
 
@@ -236,6 +243,7 @@ height: 250vh;
 
  body#tratamentos{
    background: linear-gradient(360deg, #003F6C 90%, rgba(196, 196, 196, 0.50) 100%);
+   display: none;
 
    font-family: 'Cabin', sans-serif;
  }
@@ -287,6 +295,8 @@ height: 250vh;
     background-size:auto;
     /* background-attachment: fixed; */
     font-family: 'Cabin', sans-serif;
+    display: none;
+
   }
 
   .efeito-navbar-off{

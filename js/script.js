@@ -1,6 +1,11 @@
 //EFEITO NAVBAR
 jQuery(document).ready(function ($) {
 
+  //EFEITO DE FADE DAS PAGINAS
+  $("#inicio"  ).fadeIn(1000).delay(3000);
+  $("#quemSomos"  ).fadeIn(1000).delay(3000);
+  $("#tratamentos" ).fadeIn(1000).delay(3000);
+
   var controlNav = false;
 
   $(document).scroll(function (e) {
