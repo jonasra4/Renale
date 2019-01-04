@@ -166,6 +166,9 @@ ul {
   background-size:cover;
 
 }
+.padding-forma{
+  padding-top:350px;
+}
 
 #rins-intro{
   background-color: #EDEDED;
@@ -186,13 +189,18 @@ height: 250vh;
 
   #forma-section{
     /* background-color: #EDEDED; */
-    height: 116vh;
-    background-image: url("../img/background/p.png");
+    height: 80vh;
+    background-image: url("../img/background/forma-mobile.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size:cover;
 
   }
+
+  .padding-forma{
+    padding-top:70px;
+  }
+
 
   .margin-tp-150{
     padding-top: 200px;
