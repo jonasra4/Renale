@@ -226,7 +226,8 @@ height: 250vh;
   }
 
   body#inicio{
-    background: linear-gradient(360deg, #003F6C 90%, rgba(196, 196, 196, 0.50) 100%);
+    /* background: linear-gradient(360deg, #003F6C 90%, rgba(196, 196, 196, 0.50) 100%); */
+    background: linear-gradient(360deg, rgba(0, 63, 108, 0.6) 90%, rgba(203, 155, 119,3.5) 98%);
 
     /* background-color: blue; */
     /* background-image: url("../img/background/bg1mobi.png"); */
@@ -239,10 +240,15 @@ height: 250vh;
    height: 100%; */
    /* overflow: hidden; */
     font-family: 'Cabin', sans-serif;
+
+ }
+ h3, h4{
+   font-size: 1.3rem;
  }
 
  body#tratamentos{
-   background: linear-gradient(360deg, #003F6C 90%, rgba(196, 196, 196, 0.50) 100%);
+   /* background: linear-gradient(360deg, #003F6C 90%, rgba(196, 196, 196, 0.50) 100%); */
+   background: linear-gradient(360deg, rgba(0, 63, 108, 0.6) 90%, rgba(203, 155, 119,3.5) 98%);
    display: none;
 
    font-family: 'Cabin', sans-serif;
