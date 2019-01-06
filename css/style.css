@@ -197,6 +197,11 @@ h3, h4{
   padding-bottom: 150px;
 }
 
+.fale-conosco{
+color: white;
+}
+
+
 @media only screen and (max-width: 600px) {
 
   .rins-quemSomos-responsive{
@@ -257,6 +262,7 @@ h3, h4{
     font-family: 'Cabin', sans-serif;
 
  }
+
 
  h3, h4{
    font-size: 1.3rem;
