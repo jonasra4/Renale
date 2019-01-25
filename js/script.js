@@ -28,7 +28,29 @@ jQuery(document).ready(function ($) {
     }
   });
 
+
+  // $( "div" ).children( ".selected" ).css( "color", "blue" );
+  $( ".perfil-med" ).hide();
+  $(".medico").mouseover(function(){
+     // $(this).css("background-color", "yellow");
+     $( this ).children( ".foto-med" ).hide();
+     $( this ).children( ".perfil-med" ).show();
+
+   });
+
+   $(".medico").mouseout(function(){
+     // $(this).css("background-color", "lightgray");
+     $( this ).children( ".perfil-med" ).hide();
+     $( this ).children( ".foto-med" ).show();
+
+
+
+   });
+
 });
+
+
+
 
 //GALERIA DE FOTOS
 let modalId = $('#image-gallery');
