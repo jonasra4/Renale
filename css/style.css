@@ -1,4 +1,83 @@
- body#inicio{
+/* The Image Buttons */
+#Btn_0:hover,
+#Btn_0:focus,
+#Btn_1:hover,
+#Btn_1:focus,
+#Btn_2:hover,
+#Btn_2:focus {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#Btn_0,
+#Btn_1,
+#Btn_2 {
+    text-align: left;
+}
+
+/* The Modal (background) */
+.Modal_0,
+.Modal_1,
+.Modal_2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #dedbdb;
+  /* background-image: linear-gradient(#dedbdb2e, #dedbdb); */
+  /* background: (360deg, #dedbdb 0%, rgba(196, 196, 196, 0) 100%); */
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  /* border: 1px solid #ffffff57; */
+  border: 1px solid rgba(0,0,0,.125);
+  width: 80%; /* Could be more or less, depending on screen size */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+/* The Close Button */
+.close_0, 
+.close_1, 
+.close_2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_0:hover,
+.close_0:focus,
+.close_1:hover,
+.close_1:focus,
+.close_2:hover,
+.close_2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.box {
+ width: 50%;
+ float: left;
+ height: 300px;/*Altura da linha*/
+}
+
+.card-title:hover, 
+.card-title:focus {
+    color: white;
+    text-decoration: none;
+} 
+
+body#inicio{
    background-image: url("../img/background/bg1.jpg");
    /* background-image: url("../img/background/bg1mobi.png"); */
 
