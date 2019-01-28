@@ -119,9 +119,9 @@
 
 
 
+    <!-- Cards Noticias -->
 
-
-    <section id="noticias">
+    <!--<section id="noticias">
       <div class="container-fluid">
         <div class="row" >
           <div class="col-lg-2 col-md-2 "></div>
@@ -161,11 +161,240 @@
                </div>
              </div>
            </div>
-         </div> <!-- cards de noticiass -->
+         </div> 
          <div class="col-lg-2"></div>
        </div>
       </div>
-    </section>
+    </section>-->
+    
+    <section>    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                    <?php
+                    echo "<div class='container-fluid' id='about'>";
+                        echo "<div class='row'>";
+                            //echo "<div class='col-lg-2'></div>";
+                            echo "<div class='col-lg-1'>";
+                                echo "<h5 class='topicos'>{$page_title}</h5>";
+                                echo "</div>";
+                        echo "</div>";
+                        echo "<div class='row align-items-center'>";
+                     
+                    $access_token="EAAfdsSLw7TQBABQerXaLZAkU6u430ZAmsFtjvvyZBZAaK7ZAPErTymeZCIyEhHXZAypxuEZCiMvFS8D9uZCxaNfBcr32XfMpmJrzRZBo8NaZCCSSdWtbOQJ28xZAFNRHACJkx7xmkR4nz54dcz7rEWPk9b1ysI1pOZCacpq64CIAliZAJxzAZDZD";
+                     
+                    $fields="id,name,description,link,cover_photo,count";
+                    $fb_page_id = "291918208110431";
+                     
+                    $json_link = "https://graph.facebook.com/v2.8/{$fb_page_id}/albums?fields={$fields}&access_token={$access_token}";
+                   
+                    $json = file_get_contents($json_link);
+                     
+                    $obj = json_decode($json, true, 512, JSON_BIGINT_AS_STRING);
+                     
+                    $album_count = count($obj['data']);
+                    
+                            echo "<div class='col-lg-12'>";
+                                echo "<div class='row'>";
+    
+                    for($x=0; $x<$album_count; $x++){
+                        
+                        $id = isset($obj['data'][$x]['id']) ? $obj['data'][$x]['id'] : "";
+                        $name = isset($obj['data'][$x]['name']) ? $obj['data'][$x]['name'] : "";
+                        $url_name=urlencode($name);
+                        $description = isset($obj['data'][$x]['description']) ? $obj['data'][$x]['description'] : "";
+                        $link = isset($obj['data'][$x]['link']) ? $obj['data'][$x]['link'] : "";
+                     
+                        $cover_photo = isset($obj['data'][$x]['cover_photo']['id']) ? $obj['data'][$x]['cover_photo']['id'] : "";
+                        $cover_photo_name = isset($obj['data'][$x]['cover_photo']['name']) ? $obj['data'][$x]['cover_photo']['name'] : "";
+                        
+                        // use this for older access tokens:
+                        // $cover_photo = isset($obj['data'][$x]['cover_photo']) ? $obj['data'][$x]['cover_photo'] : "";
+                         
+                        $count = isset($obj['data'][$x]['count']) ? $obj['data'][$x]['count'] : "";
+                     
+                        // if you want to exclude an album, just add the name on the if statement
+                        if(
+                            $name!="Profile Pictures" &&
+                            $name!="Cover Photos" &&
+                            $name!="Timeline Photos"
+                        ){
+                     
+                            $show_pictures_link = "album.php?album_id={$id}&album_name={$name}";
+                        
+                                    echo "<div class='col-md-6 col-lg-4 col-sm-6 col-12'>";
+                                        echo "<button id='Btn_$x' style='
+                                                    border-left-width: 0px;
+                                                    border-right-width: 0px;
+                                                    border-top-width: 0px;
+                                                    border-bottom-width: 0px;
+                                                    padding-right: 0px;
+                                                    padding-left: 0px;
+                                                    padding-top: 0px;
+                                                    padding-bottom: 0px;
+                                                    background-color: rgb(221,221,221,0);'>";
+                                        echo "<div class='card'>";
+                                            /* echo "<button id='Btn_$x' style='
+                                                    border-left-width: 0px;
+                                                    border-right-width: 0px;
+                                                    border-top-width: 0px;
+                                                    border-bottom-width: 0px;
+                                                    padding-right: 0px;
+                                                    padding-left: 0px;
+                                                    padding-top: 0px;
+                                                    padding-bottom: 0px;'>"; */
+                                            echo "<img class='card-img-top' src='https://graph.facebook.com/v2.3/{$cover_photo}/picture?access_token={$access_token}' alt=''>";
+                                            //echo "</button>"; 
+                              
+                                            echo "<div class='card-body'>";
+                                                echo "<div style='height:65px; overflow-y: hidden;'>";
+                                                    echo "<h3>";
+                                                        echo "<a class='card-title' style='color:#363636' href='{$show_pictures_link}'>{$name}</a>";
+                                                    echo "</h3>";
+                                                echo "</div>";
+                                                
+                                                $count_text="Notícias";
+                                                if($count>1){ $count_text="Notícias"; }
+                                                
+                                                echo "<p class='card-text'>";
+                                                    echo "<div style='color:#888;'>{$count} {$count_text} / <a style='color:#3C357C' href='{$link}' target='_blank'>Veja no Facebook</a></div>";
+                                                    echo "<div style='height:125px; overflow-y: hidden;'>";
+                                                        echo $cover_photo_name;
+                                                    echo "</div>";
+                                                echo "</p>";                                        
+                                            echo "</div>";
+                                        echo "</div>";
+                                        echo "</button>";
+                                    echo "</div>";
+                        }
+                    }
+                                echo "</div>";
+                            echo "</div>";
+                        echo "</div>";
+                    
+                        // MODAL POP UP
+                        // First
+                        echo "<div class='col-md-8'>";
+                            $id_0 = isset($obj['data'][0]['id']) ? $obj['data'][0]['id'] : "";
+                            $link_0 = isset($obj['data'][0]['link']) ? $obj['data'][0]['link'] : "";
+                            $capa_0 = isset($obj['data'][0]['cover_photo']['id']) ? $obj['data'][0]['cover_photo']['id'] : "";
+                            $name_0 = isset($obj['data'][0]['name']) ? $obj['data'][0]['name'] : "";
+                            $capa_nome_0 = isset($obj['data'][0]['cover_photo']['name']) ? $obj['data'][0]['cover_photo']['name'] : "";
+                            
+                            $album_link_0 = "album.php?album_id={$id_0}&album_name={$name_0}";
+                            
+                            echo "<div id='Modal_0' class='modal'>";
+                                echo "<div class='modal-content'>";
+                                    echo "<div class='modal-header'>";
+                                        echo "<h3>";
+                                            echo "<a class='card-title' style='color:#363636' href='{$album_link_0}'>{$name_0}</a>";
+                                        echo "</h3>";
+                                        echo "<span class='close_0'>&times;</span>";
+                                    echo "</div>";
+                                    echo "<div class='modal-body'>";
+                                        echo "<div class='row'>";
+                                            echo "<div class='col-md-4 col-12'>";
+                                                echo "<img class='card-img-top img-fluid shadow bg-white rounded' 
+                                                      style='border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; width: 100%; padding: 1px;'
+                                                      src='https://graph.facebook.com/v2.3/{$capa_0}/picture?access_token={$access_token}' alt=''>";
+                                            echo "</div>";
+                                            echo "<div class='col-md-8 col-12'>";
+                                                echo "<p class='card-text'>";
+                                                    echo "<div style='overflow-y: auto;'>";
+                                                        echo $capa_nome_0;
+                                                    echo "</div>";
+                                                echo "</p>";
+                                            echo "</div>";
+                                        echo "</div>";
+                                    echo "</div>";
+                                echo "</div>";
+                            echo "</div>";
+                            
+                        echo "</div>";
+                    echo "</div>";
+
+                        
+                        // Second
+                        echo "<div class='col-md-8'>";
+                            $link_1 = isset($obj['data'][1]['link']) ? $obj['data'][1]['link'] : "";
+                            $capa_1 = isset($obj['data'][1]['cover_photo']['id']) ? $obj['data'][1]['cover_photo']['id'] : "";
+                            $id_1 = isset($obj['data'][1]['id']) ? $obj['data'][1]['id'] : "";
+                            $name_1 = isset($obj['data'][1]['name']) ? $obj['data'][1]['name'] : "";
+                            $capa_nome_1 = isset($obj['data'][1]['cover_photo']['name']) ? $obj['data'][1]['cover_photo']['name'] : "";
+                            
+                            $album_link_1 = "album.php?album_id={$id_1}&album_name={$name_1}";
+                            
+                            echo "<div id='Modal_1' class='modal'>";
+                                echo "<div class='modal-content'>";
+                                    echo "<div class='modal-header'>";
+                                        echo "<h3>";
+                                            echo "<a class='card-title' style='color:#363636' href='{$album_link_1}'>{$name_1}</a>";
+                                        echo "</h3>";
+                                        echo "<span class='close_1'>&times;</span>";
+                                    echo "</div>";
+                                    echo "<div class='modal-body'>";
+                                        echo "<div class='row'>";
+                                            echo "<div class='col-md-4 col-12'>";
+                                                echo "<img class='card-img-top img-fluid shadow bg-white rounded' 
+                                                      style='border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; width: 100%; padding: 1px;'
+                                                      src='https://graph.facebook.com/v2.3/{$capa_1}/picture?access_token={$access_token}' alt=''>";
+                                            echo "</div>";
+                                            echo "<div class='col-md-8 col-12'>";
+                                                echo "<p class='card-text'>";
+                                                    echo "<div style='overflow-y: auto;'>";
+                                                        echo $capa_nome_1;
+                                                    echo "</div>";
+                                                echo "</p>";
+                                            echo "</div>";
+                                        echo "</div>";
+                                    echo "</div>";
+                                echo "</div>";
+                            echo "</div>";
+                        echo "</div>";
+                        
+                        // Third
+                        echo "<div class='col-md-8'>";
+                            $link_2 = isset($obj['data'][2]['link']) ? $obj['data'][2]['link'] : "";
+                            $capa_2 = isset($obj['data'][2]['cover_photo']['id']) ? $obj['data'][2]['cover_photo']['id'] : "";
+                            $id_2 = isset($obj['data'][2]['id']) ? $obj['data'][2]['id'] : "";
+                            $name_2 = isset($obj['data'][2]['name']) ? $obj['data'][2]['name'] : "";
+                            $capa_nome_2 = isset($obj['data'][2]['cover_photo']['name']) ? $obj['data'][2]['cover_photo']['name'] : "";
+                            
+                            $album_link_2 = "album.php?album_id={$id_2}&album_name={$name_2}";
+                            
+                            echo "<div id='Modal_2' class='modal'>";
+                                echo "<div class='modal-content'>";
+                                    echo "<div class='modal-header'>";
+                                        echo "<h3>";
+                                            echo "<a class='card-title' style='color:#363636' href='{$album_link_2}'>{$name_2}</a>";
+                                        echo "</h3>";
+                                        echo "<span class='close_2'>&times;</span>";
+                                    echo "</div>";
+                                    echo "<div class='modal-body'>";
+                                        echo "<div class='row'>";
+                                            echo "<div class='col-md-4 col-12'>";
+                                                echo "<img class='card-img-top img-fluid shadow bg-white rounded' 
+                                                      style='border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; width: 100%; padding: 1px;'
+                                                      src='https://graph.facebook.com/v2.3/{$capa_2}/picture?access_token={$access_token}' alt=''>";
+                                            echo "</div>";
+                                            echo "<div class='col-md-8 col-12'>";
+                                                echo "<p class='card-text'>";
+                                                    echo "<div style='overflow-y: auto;'>";
+                                                        echo $capa_nome_2;
+                                                    echo "</div>";
+                                                echo "</p>";
+                                            echo "</div>";
+                                        echo "</div>";
+                                    echo "</div>";
+                                echo "</div>";
+                            echo "</div>";
+                        echo "</div>";
+                    ?>
+                </div>
+            </div>    
+        </div>
+    <div class="col-lg-2"></div>
 
     <!-- conato -->
       <section  id="contato">
