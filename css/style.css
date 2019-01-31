@@ -236,7 +236,10 @@ footer {
   font-size: 15px;
 }
 
-ul {
+ul{
+  padding-left: 20px;
+}
+ul.horario{
   list-style-type: none;
   padding-left: 0px;
 }
@@ -272,9 +275,9 @@ height: 250vh;
 h3, h4{
    color:#003F6C;
 }
-.rins-quemSomos-responsive{
+/*.rins-quemSomos-responsive{
   padding-bottom: 150px;
-}
+}*/
 
 .fale-conosco{
 color: white;
