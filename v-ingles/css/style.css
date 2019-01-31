@@ -1,0 +1,515 @@
+/* The Image Buttons */
+#Btn_0:hover,
+#Btn_0:focus,
+#Btn_1:hover,
+#Btn_1:focus,
+#Btn_2:hover,
+#Btn_2:focus {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#Btn_0,
+#Btn_1,
+#Btn_2 {
+    text-align: left;
+}
+
+/* The Modal (background) */
+.Modal_0,
+.Modal_1,
+.Modal_2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #dedbdb;
+  /* background-image: linear-gradient(#dedbdb2e, #dedbdb); */
+  /* background: (360deg, #dedbdb 0%, rgba(196, 196, 196, 0) 100%); */
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  /* border: 1px solid #ffffff57; */
+  border: 1px solid rgba(0,0,0,.125);
+  width: 80%; /* Could be more or less, depending on screen size */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+/* The Close Button */
+.close_0, 
+.close_1, 
+.close_2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_0:hover,
+.close_0:focus,
+.close_1:hover,
+.close_1:focus,
+.close_2:hover,
+.close_2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.box {
+ width: 50%;
+ float: left;
+ height: 300px;/*Altura da linha*/
+}
+
+/*.card-title:hover, 
+.card-title:focus {
+    color: white;
+    text-decoration: none;
+} */
+
+body#inicio{
+   background-image: url("../img/background/bg1.jpg");
+   /* background-image: url("../img/background/bg1mobi.png"); */
+
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Cabin', sans-serif;
+   display: none;
+   /*line-height: 0.5 !important;*/
+}
+
+.ddd{
+  line-height: 0.5;
+}
+
+body#tratamentos{
+  background-image: url("../img/background/bg-tratamentos.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Cabin', sans-serif;
+  display: none;
+
+}
+
+/*configuracao navbar*/
+.dropdown-menu{
+  min-width: 2rem;
+  padding: 0px;
+  background-color: transparent;
+  border-radius: 0;
+  border:none;
+}
+a.dropdown-item{
+  padding: 0px 7px;
+  color: white;
+}
+.dropdown-item:hover {
+    color: #4d99ea;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.dropdown-item:last-child {
+     border-bottom-right-radius: 0 ; 
+     border-bottom-left-radius: 0; 
+}
+.dropdown-item:first-child {
+     border-top-left-radius: 0; 
+     border-top-right-radius: 0; 
+}
+
+.efeito-navbar-off{
+  background-color: transparent;
+  padding: 20px 16px;
+}
+
+.efeito-navbar-in{
+  padding: 8px 16px;
+  background-color: #005088;
+}
+
+a{
+  color: white;
+}
+
+.navbar-toggler{
+  border:1px solid white;
+}
+
+i.fas{
+  color: white;
+}
+
+/*configuracao das sections*/
+#tela-inicio{
+   height: 50vh;
+}
+
+
+
+
+#noticias{
+  padding: 20px 0px;
+  background: linear-gradient(360deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%);
+  background-color: #EDEDED;
+}
+
+#tela-tratamentos{
+  height: 80vh;
+}
+#intro-tratamentos{
+  padding: 50px 0px;
+}
+#tratamentos-section{
+  padding: 50px 0px;
+}
+
+
+body#quemSomos{
+  height:200vh;
+  background-color: #EDEDED;
+
+  background-image: url("../img/background/back-quemSomos.png");
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  background-size:contain;
+  /* background-attachment: fixed; */
+  font-family: 'Cabin', sans-serif;
+  display: none;
+
+}
+#equipe{
+  background: linear-gradient(360deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%);
+  background-color: #EDEDED;
+  padding-bottom: 80px;
+}
+
+/*contato*/
+.jumbotron{
+  border-radius: 0px;
+  /* background: linear-gradient(166.77deg, #003D6C -68.29%, #CB9B77 102.88%); */
+  background-color: #EDEDED;
+  color: white;
+  margin: 0px;
+  padding-bottom: 53px;
+  background: #EDEDED;
+  border-bottom-left-radius : 5px 5px 5px 0px;
+  border-bottom-right-radius: 5px 5px 5px 0px;
+}
+
+.jumbotron-azul{
+  background-color: #003F6C;
+}
+
+.col-contato{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.form-control{
+  background-color: transparent;
+  border-bottom-color: rgba(0, 63, 108, 0.5);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-radius: 0px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: transparent;
+    border:transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    background: #005088;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border-color: transparent;
+}
+
+/*configuracoes de texto*/
+h2{
+  font-family: 'Cabin', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 44px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+a:hover {
+    color: #4d99ea;
+}
+/*rodape*/
+
+footer {
+  padding: 25px 0;
+  background-color: #003F6C;
+  color:white;
+  font-size: 15px;
+}
+
+ul{
+  padding-left: 20px;
+}
+ul.horario{
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+/******************/
+#forma-section{
+  /* background-color: #EDEDED; */
+  height: 110vh;
+  background-image: url("../img/background/formaa.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+
+}
+.padding-forma{
+  padding-top:350px;
+}
+
+#rins-intro{
+  background-color: #EDEDED;
+height: 250vh;
+  /* height: 2087px; */
+  background-image: url("../img/background/bg34r.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+}
+
+.space787padding{
+  padding-top: 787px;
+}
+
+h3, h4{
+   color:#003F6C;
+}
+/*.rins-quemSomos-responsive{
+  padding-bottom: 150px;
+}*/
+
+.fale-conosco{
+color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .rins-quemSomos-responsive{
+    padding-bottom: 10px;
+  }
+
+  h2{
+    font-size: 22px;
+  }
+
+  #forma-section{
+    /* background-color: #EDEDED; */
+    height: 80vh;
+    background-image: url("../img/background/forma-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+
+  }
+
+  .padding-forma{
+    padding-top:70px;
+  }
+
+
+  .margin-tp-150{
+    padding-top: 200px;
+  }
+
+  body#quemSomos{
+    height:300vh;
+    background-color: #EDEDED;
+
+    background-image: url("../img/background/mobile2.png");
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size:auto;
+    /* background-attachment: fixed; */
+    display: none;
+
+    font-family: 'Cabin', sans-serif;
+  }
+
+  body#inicio{
+    /* background: linear-gradient(360deg, #003F6C 90%, rgba(196, 196, 196, 0.50) 100%); */
+    background: linear-gradient(360deg, rgba(0, 63, 108, 0.9) 90%, rgba(203, 155, 119,3.5) 98%);
+
+    /* background-color: blue; */
+    /* background-image: url("../img/background/bg1mobi.png"); */
+    /* background: url("../img/background/bg1mobi.png") no-repeat center center fixed;
+
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100%; */
+   /* overflow: hidden; */
+    font-family: 'Cabin', sans-serif;
+
+ }
+
+
+ h3, h4{
+   font-size: 1.3rem;
+    color:#003F6C;
+ }
+
+ body#tratamentos{
+   /* background: linear-gradient(360deg, #003F6C 90%, rgba(196, 196, 196, 0.50) 100%); */
+   background: linear-gradient(360deg, rgba(0, 63, 108, 0.9) 90%, rgba(203, 155, 119,3.5) 98%);
+   display: none;
+
+   font-family: 'Cabin', sans-serif;
+ }
+  .efeito-navbar-off{
+    background-color:  #003F6C;
+    padding: 20px 16px;
+  }
+
+  #noticias{
+    /* height:90vh; */
+    padding: 0px 0px;
+    background: linear-gradient(360deg, #003F6C 0%, rgba(196, 196, 196, 0) 100%);
+    background-color: #EDEDED;
+  }
+
+
+
+
+  #rins-intro{
+    background-color: #EDEDED;
+
+    height: auto;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+  }
+
+  .space787padding{
+    padding-top: 0px;
+  }
+
+
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+
+  body#quemSomos{
+    height:300vh;
+    background-color: #EDEDED;
+
+    background-image: none;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size:auto;
+    /* background-attachment: fixed; */
+    font-family: 'Cabin', sans-serif;
+    display: none;
+
+  }
+
+  .efeito-navbar-off{
+    background-color:  #003F6C;
+    padding: 20px 16px;
+  }
+}
+
+
+
+/*GERAIS*/
+
+.back-padrao{
+  background-color: #EDEDED;
+}
+
+.espacamento-tratamentos{
+  padding: 20px 0px;
+}
+.espacamento-icones{
+  margin: 20px 0px;
+}
+
+
+
+/************************************/
+/*GALERIA*/
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.img-thumbnail {
+    padding: 0;
+    /* background-color: #fff; */
+    /* border: 1px solid #dee2e6; */
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*PERFIL MEDICOS*/
+.card {
+  margin-top: 0px;
+    margin-bottom: 40px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #DEDBDB;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+ul.perfil-card{
+  list-style-type: disc;
+  padding-left: 10px;
+}
+.medico{
+  margin: 20px 0px;
+}
+
+.card-title{
+  color: #003F6C;
+}
