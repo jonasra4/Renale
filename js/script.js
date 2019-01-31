@@ -50,8 +50,11 @@ span_2.onclick = function() {
   }
 }*/
 
+
+ 
 //EFEITO NAVBAR
 jQuery(document).ready(function ($) {
+
 
   //EFEITO DE FADE DAS PAGINAS
   $("#inicio"  ).fadeIn(1000).delay(3000);

@@ -101,6 +101,32 @@ body#tratamentos{
 }
 
 /*configuracao navbar*/
+.dropdown-menu{
+  min-width: 2rem;
+  padding: 0px;
+  background-color: transparent;
+  border-radius: 0;
+  border:none;
+}
+a.dropdown-item{
+  padding: 0px 7px;
+  color: white;
+}
+.dropdown-item:hover {
+    color: #4d99ea;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.dropdown-item:last-child {
+     border-bottom-right-radius: 0 ; 
+     border-bottom-left-radius: 0; 
+}
+.dropdown-item:first-child {
+     border-top-left-radius: 0; 
+     border-top-right-radius: 0; 
+}
+
 .efeito-navbar-off{
   background-color: transparent;
   padding: 20px 16px;
@@ -226,7 +252,9 @@ h2{
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-
+a:hover {
+    color: #4d99ea;
+}
 /*rodape*/
 
 footer {
@@ -430,6 +458,7 @@ color: white;
 .espacamento-icones{
   margin: 20px 0px;
 }
+
 
 
 /************************************/
