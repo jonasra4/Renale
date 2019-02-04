@@ -280,7 +280,7 @@ ul.horario{
 /******************/
 #forma-section{
   /* background-color: #EDEDED; */
-  height: 110vh;
+  height: 140vh;
   background-image: url("../img/background/formaa.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -293,7 +293,7 @@ ul.horario{
 
 #rins-intro{
   background-color: #EDEDED;
-height: 250vh;
+height: 300vh;
   /* height: 2087px; */
   background-image: url("../img/background/bg34r.png");
   background-repeat: no-repeat;
